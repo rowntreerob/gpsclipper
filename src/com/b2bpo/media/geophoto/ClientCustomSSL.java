@@ -46,10 +46,8 @@ public class ClientCustomSSL {
 	  private static final JsonFactory JSON_FACTORY = new JacksonFactory();
 
 	  // FILL THESE IN WITH YOUR VALUES FROM THE API CONSOLE
-	  static final String CLIENT_ID = "707313301757.apps.googleusercontent.com";
-			  static final String CLIENT_SECRET = "XXUhpyBlOi0mxWOaEBjEVe2b";	  
-//	  static final String CLIENT_ID = "13604934834.apps.googleusercontent.com";
-//	  static final String CLIENT_SECRET = "vbdZ2AOZAHzSNjpsnz3xXC93";
+	  static final String CLIENT_ID = "yourkeyhere.googleusercontent.com";
+			  static final String CLIENT_SECRET = "XX";	  
 //	  private static String token="";
 	  static public  PhotoEntry entry = new PhotoEntry(new Entry());
 	  //TODO stop this
