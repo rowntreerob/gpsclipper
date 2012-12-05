@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/gpxfile"
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordTitle"/>
+
+    <TextView 
+        android:id="@+id/gpxfilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:text=""
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType" />
+    
+    <TextView 
+        android:id="@+id/gpxtimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpxfilename"
+        android:text="@string/datatime"
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType" />
+
+    <TextView 
+        android:id="@+id/gpxtvalues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpxtimes"
+        android:text=""
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType" />    
+    
+    <View 
+      android:layout_below="@+id/gpxtvalues"
+      android:id="@+id/separator"         
+      android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:background="#DADADA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/separator" 
+        android:text="@string/albumname"
+        android:lineSpacingExtra="3dp"  
+        style="@style/Text.WordTitle"/>
+
+    <TextView
+        android:id="@+id/albumtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:text="" 
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType"/>
+    
+    <TextView 
+        android:id="@+id/phototimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/albumtitle"
+        android:text="@string/pdatatime"
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType" />
+
+    <TextView 
+        android:id="@+id/phototvalues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phototimes"
+        android:text=""
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType" />      
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phototvalues"
+        android:text="@string/confirmsubmit"
+        android:lineSpacingExtra="6dp"  />
+    
+
+    <Button 
+        android:id="@+id/okbutton"
+        android:layout_below="@+id/textView5"         
+            android:text="@string/okbutton" 
+            android:orientation="horizontal"
+            android:background="@layout/custom_button"
+            style="@style/ActionButton"/>  
+    <View 
+        android:id="@+id/simplespace"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_toRightOf="@+id/okbutton"
+        /> 
+
+    <Button
+        android:id="@+id/cancelbutton"  
+        android:layout_toRightOf="@+id/simplespace"
+        android:layout_alignBottom="@+id/okbutton"        
+            android:text="@string/cancelbutton" 
+            android:orientation="horizontal"
+            android:background="@layout/custom_button_grey"
+            style="@style/ActionButton"/> 
+            
+        <View 
+        android:id="@+id/extendedspace"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_toRightOf="@+id/cancelbutton"
+        /> 
+        
+         <Button
+        android:id="@+id/helpbutton"  
+        android:layout_toRightOf="@+id/extendedspace"
+        android:layout_alignBottom="@+id/cancelbutton"        
+            android:text="@string/helpbutton" 
+            android:orientation="horizontal"
+            android:background="@layout/custom_button_grey"
+            style="@style/ActionButton"/> 
+            
+       <TextView
+        android:id="@+id/updmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/okbutton"
+        android:text="" 
+        android:lineSpacingExtra="3dp" 
+        style="@style/Text.WordType"/>
+
+</RelativeLayout>

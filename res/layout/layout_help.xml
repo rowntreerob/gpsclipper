@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <TextView 
+        android:id="@+id/helpView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+        
+          <View 
+        android:id="@+id/simplespace"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+          
+      <TextView 
+        android:id="@+id/helpView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+
+         <View 
+        android:id="@+id/simplespac2"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+         
+      <TextView 
+        android:id="@+id/helpView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+
+          <View 
+        android:id="@+id/simplespac3"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+          
+      <TextView 
+        android:id="@+id/helpView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+
+         <View 
+        android:id="@+id/simplespac4"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+         
+      <TextView 
+        android:id="@+id/helpView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+        
+         <View 
+        android:id="@+id/simplespac5"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+          
+      <TextView 
+        android:id="@+id/helpView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" /> 
+
+         <View 
+        android:id="@+id/simplespac6"
+        android:layout_width="wrap_content"
+        android:layout_height="5dip"
+        />
+         
+      <TextView 
+        android:id="@+id/helpView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp" />      
+      
+</LinearLayout>

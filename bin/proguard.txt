@@ -1,0 +1,15 @@
+# view AndroidManifest.xml #generated:22
+-keep class com.b2bpo.media.geophoto.AlbumListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.b2bpo.media.geophoto.ApplyGeoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.b2bpo.media.geophoto.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.b2bpo.media.geophoto.PicasaAlbumService { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.b2bpo.media.geophoto.UpdateActivity { <init>(...); }
+

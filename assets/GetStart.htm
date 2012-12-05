@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>GPSClipper - Getting Started</title>
+  <style type="text/css" media="all">
+          @import url("../css/maven-base.css");          
+          @import url("../css/maven-theme.css");
+  </style>
+  <link rel="stylesheet" href="print.css" type="text/css" media="print">
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="Content-Type">
+  <meta content="rob rowntree" name="author">
+  <meta content="rowntreerob@yahoo.com" name="email">
+</head>
+<body topmargin="0" leftmargin="0" class="composite" marginheight="0"
+ marginwidth="0">
+<div class="section"><a name="INSTRUCTIONS"></a><h2>Instructions, GPSClipper app for Android - Update a WebAlbum with Geotags taken from a local file</h2>
+<table class="bodyTable"><tr class="a"><th>Prerequisites </th><th>Comments on what to do Before you Start using GPSClipper</th></tr>
+    <tr class="b"><td><a href="https://play.google.com/store/apps/details?id=com.metago.astro">Astro</a> or
+        <a href="https://play.google.com/store/apps/details?id=org.openintents.filemanager">OI Filemanager</a> App</td>
+        <td>
+         You need to have an app such as these used for displaying list of files and for choosing files from the list. 
+         You will need to be able to find the folder on the phone's sdcard or external storage area where 
+         Geotag files containing Latitude/ Longitude are kept. 
+        </td></tr>
+        <tr class="a"><td><a href="https://play.google.com/store/apps/details?id=com.google.android.maps.mytracks">MyTracks</a>
+            or some GPS tracks app</td>
+        <td>
+         When you are taking photos with your camera, you need to have running on the phone an app such as these used for
+         recording a set of  latitude readings. This app creates the GeoRss tags data that will be used to update the photos. 
+         Output type <a href="http://en.wikipedia.org/wiki/GPS_eXchange_Format">GPX</a> is required by GPSClipper. 
+        </td></tr>
+<tr class="b"><td>GPX File from the GPS app will be used to update Photos</td>
+        <td>
+         If you are walking 
+         around taking pictures for 30 minutes then the MyTracks latitude recorder app should be running during those same 30 minutes. 
+         When you are done taking the pictures, you can stop the GPS recorder app and save the recorded track as type
+         <a href="images/device-mytrks_save_dialog_2.png">GPX</a>.
+         The  <a href="images/device-mytrks_save_dialog_1.png">SaveAs </a> dialog for storing GPX data should put the file in a folder on the phone where you 
+         can find it later during the update photos step.  
+        </td></tr>
+<tr class="a"><td>GMail Account</td>
+        <td>
+        Logons, identity, and Access Authorization are all controlled in collaboration with Google Accounts. GPSClipper requires no
+        signups, no logons and no personal data. Where you need access to something like a photo album, you will first logon your phone to 
+        your GMail account. 
+        </td></tr>        
+<tr class="b"><td>Camera Photos Uploaded to Web</td>
+        <td>
+            Your web facility for your photo albums needs to be either Picasa or the Photo Tab under Google+. Use the Picasa uploader, or the <strong>
+            Upload new photos</strong> button in Google+. Create a new album with a name that you can remember for following step where 
+            you select a photo album for update. Note that GPSClipper is currently limited to web based photo albums that are
+            under the control and access authority of your GMail Account. 
+        </td></tr>
+<tr class="a"><td>GPSClipper Install </td>
+        <td>
+        Not all levels of android support the app or have been tested. If you have Gingerbread or a newer version of Android on your
+        phone then, you should be able to find the app in the store and to download/install to your device.         
+        </td></tr> 
+<tr class="b"><td>Clock Synchronization</td>
+        <td>
+            The update strategy where Latitude/Longitude from a GPX data file, created on the phone in conjunction with the phone's clock
+            setting is used to update photos depends on two clocks being synchronized. So, check your phone clock. Check the setting for 
+            Daylight Savings. Then go to the camera system settings and check the clock there. Phone time should equal camera time. 
+            If the phone says 9:23 AM tuesday the 14th of May, then the camera should say the exact same thing. If there is a discrepancy
+            then resolve it before attempting updates using GPSClipper. 
+            Both the phone and the camera should have the same configuration for Daylight Savings. 
+        </td></tr>        
+</table>
+</div>
+<div class="subsection"><a name="Running"></a><h3>Running the App</h3>
+<table class="bodyTable"><tr class="a"><th>Steps </th><th>Comments</th><th>Steps </th><th>Comments</th></tr>
+<tr class="b"><td><img src="images/geotag_96.png" align="top" ></td>
+        <td>
+            Startup the app.  You may be prompted for one or two things by Google. Wifi connection is strongly recommended due to 
+            the volume of Network traffic involved in processing the updates when you OK the last step. If there are more than 10 photos in your album and 
+            you attempt an update over 3G connection, you may have to wait for awhile. See 
+            <a href="http://www.youtube.com/watch?v=05al7FfqbDc">Youtube instructions</a>
+        </td><td><img src="images/device-google-account-logon.png" align="top"  height="360" width="216" ></td>
+        <td>
+                Logon to your Google account if
+    prompted. This is the account that controls the photo albums on either Google+ or Picasa
+        </td></tr>
+        <tr class="a"><td> <img src="images/device-grant-access.png" align="top"  height="360" width="216"></td>
+            <td>    Google will ask if you wish to permit the app the authority to update your online photo albums controlled by Google. Click on the 
+    blue ALLOW ACCESS button so GPSClipper app will have authority to update your Google online photos.</td>
+            <td><img src="images/device-album-list.png" align="top"  height="360" width="216">  </td>
+            <td>    Once the app has authority to access the photos, it goes to your Online Photo Galleries, retreiving the Names of the 10 most recent
+    albums. Hopefully, one of these is the one that you want to update with Latitude/Longitude data from the phone's GPX file.
+            Touch a file to select it for processing. It will be updated with data from the GPX file chosen in the next 4 steps.</td>
+</tr>
+        <tr class="b"><td><img src="images/device-chooser-intent.png" align="top"  height="360" width="216"></td>
+            <td>GPSClipper does NOT include the feature that displays Folders and Files.  
+                There is a prerequisite application selection step here because you have to tell the intended action
+                which app you normally use as a file Chooser? Many other apps exist for that purpose and GPSClipper assumes you 
+    have one of these apps. Choose the app you will use to select the GPX file. I use OI File Manager.</td>
+            <td><img src="images/device-chooser-mytracks.png" align="top"  height="360" width="216"> </td>
+            <td>    Navigate the file system on the phone and find the folder where you stored the GPS Data from the track you recorded earlier while
+    taking the pictures. On my Nexus One, i go to <strong>/mnt/sdcard/MyTracks/GPX</strong> folder to find the files. </td></tr>
+<tr class="a"><td><img src="images/device-chooser-gpx.png" align="top"  height="360" width="216"></td>
+            <td>Open GPX folder to get a filelist of Latitude / Longitude files saved on the phone.    </td>
+            <td><img src="images/device-gpx-files.png" align="top" height="360" width="216">  </td>
+            <td>    When you have the folder with all the GPX files, select the one file that you recorded while taking the photos on the camera. Note
+    that if you took your first album photo <strong> after</strong> launching the GPS recorder, then the youngest timestamp value in the 
+    GPX file will be from a moment in time <strong>preceeding</strong> the timestamp value on the first photo taken in the album. This will
+    give best results during the update. Likewise, the GPS recording should have been stopped after the last photo was taken. This will assure
+    that there exist Latitude/Longitude readings in the GPX file having timestamps <strong>after</strong> the timestamp for the last photo
+    in the album.   </td>
+<tr class="b"><td><img src="images/device-update-dialog.png" align="top"  height="360" width="216"></td>
+            <td>    Review the data selections that you have made before pressing OK button for the update. GPSClipper will attempt to use the Latitude/Longitude
+    from the GPX file you selected in order to update the Photo Album that you selected. Best matching technique currently selects the 
+    Latitude/Longitude pair from the data in the selected GPX file having a timestamp value closest to the that of the photo being updated. 
+    Press the OK button to begin the update. A dialog will Alert you that an update is taking place. On a good wifi connection the photos
+            in the selected album each take less than a second to update. Be patient will the phone calls the google API for each of the 
+            photo update operations. At the end the update review display will display how many photos were updated. </td>
+            <td><img src="images/device-help.png" align="top"  height="360" width="216"></td>
+            <td>Use the Help button and RTM if you get lost. </td></tr>    
+</tr>    
+</table>    
+
+</body>
+</html>

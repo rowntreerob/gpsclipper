@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPSClipper</string>
+    <string name="confirmsubmit">Is it OK to apply gpx data points to the photo album?</string>
+    <string name="albumname">From the web, Album Name:</string>
+    <string name="gpxfile">GPX File path on phone:</string>
+    <string name="okbutton">OK</string>
+    <string name="cancelbutton">Cancel</string>
+    <string name="helpbutton">Help</string>
+    <string name="helpn1">GPSClipper lets you select a local file of GeoRss type data, using Lat/Long data to update a Web based photo album in a batch process. </string>
+    <string name="helpn2">Start the  app and Log in to Gmail if necessary then, click on the button in the Google page. This allows the app access to your albums on Picasa.</string>
+    <string name="helpn3">Select the album in the Albums Select screen. This album photos will be updated with GeoRss data Latitude and Longitude.</string>
+    <string name="helpn4">Select the app you normally use to choose files on the phone. File Manager and Astro are 2 popular apps for this purpose.</string>
+    <string name="helpn5">Select the folder and the file containing the GeoRss data that covers the same period of time during which the album photos were taken. </string>
+    <string name="helpn6">Review the selections for the Album to be updated and the GeoRss data file that will be the source of the  Latitude Longitude used to update the photos in the album.</string>
+    <string name="helpn7">Click on OK and wait while the phone controls updates on the web photos. Message alert will display on phone when updates are completed.</string>
+    <string name="processing_msg">applying updates to web photos.</string>
+    <string name="processing_albums">retreiving Album List</string>
+    <string name="processing_title">Wait for Process </string>
+    <string name="processing_complete">Processing completed on </string>
+    <string name="datatime">GPX Start Time : End Time</string>
+    <string name="pdatatime">Photo Start Time : End Time</string>
+</resources>

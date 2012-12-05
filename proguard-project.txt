@@ -1,0 +1,73 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-keepattributes SourceFile,LineNumberTable
+
+#-optimizationpasses 5
+#-dontusemixedcaseclassnames
+#-dontskipnonpubliclibraryclasses
+#-dontpreverify
+-verbose
+#-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-libraryjars  ../../../../../i/android-sdk-windows/platforms/android-10/android.jar
+-libraryjars <java.home>/lib/rt.jar
+
+
+#-keep public class com.b2bpo.media.** { *; }
+
+-keep public class javax.activation.** { *; }
+-keep public class javax.mail.** { *; }
+-keep public class com.sun.mail.** { *; }
+-keep public class com.sun.activation.** { *; }
+-keep public class com.google.gdata.** { *; }
+-keep public class com.google.api.** { *; }
+-keep public class com.google.common.** { *; }
+-keep public class ch.boye.httpclientandroidlib.** { *; }
+-keep public class org.apache.http.** { *; }
+-keep public class org.apache.commons.logging.** { *; }
+-keep public class org.apache.html.** { *; }
+-keep public class org.apache.wml.** { *; }
+-keep public class org.apache.xerces.** { *; }
+-keep public class org.apache.xml.** { *; }
+-keep public class org.codehaus.jackson.** { *; }
+-keep public class org.xmlpull.** { *; }
+-keep public class org.kxml2.** { *; }
+
+-dontwarn com.sun.xml.**
+-dontwarn com.google.gdata.**
+-dontwarn com.google.common.**
+-dontwarn com.google.api.**
+-dontwarn javax.activation.**
+-dontwarn org.apache.http.**
+-dontwarn org.apache.commons.**
+-dontwarn org.apache.xerces.**
+-dontwarn org.codehaus.jackson.**
+-dontwarn org.xmlpull.**
+-dontwarn ch.boye.httpclientandroidlib.**
+
+-assumenosideeffects class android.util.Log { public * ; }
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** i(...);
+    public static *** w(...);
+}
+
+

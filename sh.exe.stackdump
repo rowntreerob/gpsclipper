@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=6102048B
+eax=00D4E108 ebx=61243754 ecx=76E1190D edx=003351F8 esi=00000000 edi=0027F9DC
+ebp=61020C00 esp=0027C7AC program=C:\cygwin\bin\sh.exe, pid 6012, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+End of stack trace
