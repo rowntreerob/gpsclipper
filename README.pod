@@ -20,11 +20,21 @@ B<MyTracks> to record data while the photos are being taken. Once the photos hav
 
 =begin html
 
-<a href="http://www.youtube.com/watch?v=Je_5P5MPS98"><img src="http://lh5.ggpht.com/wP-jH66rvb-KMKvv8_deQ4fFVdTslR92iDy015dQbIInQGDvt7aqhr81R6wGe42a7b7W"></a>
+<div style="width:625px; height:517px; border:1px solid red; padding:5px;">
+
+<a href="http://www.youtube.com/watch?v=Je_5P5MPS98"><img  src="http://lh5.ggpht.com/wP-jH66rvb-KMKvv8_deQ4fFVdTslR92iDy015dQbIInQGDvt7aqhr81R6wGe42a7b7W" style="width:307px; height:512px; border:1px solid blue; float:left;" /></a>
+<img  src="http://lh3.ggpht.com/jU2C3ovNYQ6VWpQ0DAmb7qLnK-2L-VCPB8GrQ_IBr40YYrYHdyIBkgYQIVXXjw3oLbY=h210" style="width:307px; height:512px; border:1px solid blue; float:left;" />
+
+</div>
+
+<img src=""></a>
 <p>
     Select an album from your online list as you see above.
 
 Select a gpx file from your phone.
 </p>
+
 =end html
+
+
 
