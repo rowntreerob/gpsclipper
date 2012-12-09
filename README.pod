@@ -20,14 +20,11 @@ B<MyTracks> to record data while the photos are being taken. Once the photos hav
 
 =begin html
 
-<img src="Example.png" align="right" alt="Figure 1." />
+<a href="http://www.youtube.com/watch?v=Je_5P5MPS98"><img src="http://lh5.ggpht.com/wP-jH66rvb-KMKvv8_deQ4fFVdTslR92iDy015dQbIInQGDvt7aqhr81R6wGe42a7b7W"></a>
 <p>
-    Here's some embedded HTML.  In this block I can 
-    include images, apply <span style="color: green">
-    styles</span>, or do anything else I can do with
-    HTML.  pod parsers that aren't outputting HTML will
-    completely ignore it.
-</p>
+    Select an album from your online list as you see above.
 
+Select a gpx file from your phone.
+</p>
 =end html
 
