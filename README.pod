@@ -12,9 +12,13 @@ B<MyTracks> to record data while the photos are being taken. Once the photos hav
 
 =over 4
 
-=item * This is a bulleted list.
+=item * Use GPS data from any third party app that saves as GPX
 
-=item * Here's another item.
+=item * Use online photo albums -Picasa
+
+=item * Correlate albums to GPS data using Timestamps
+
+=item * Automatic updates to every photo from an album
 
 =back
 
@@ -31,10 +35,22 @@ B<MyTracks> to record data while the photos are being taken. Once the photos hav
 <p>
     Select an album from your online list as you see above.
 
-Select a gpx file from your phone.
+Select a gpx file from your phone as in right-hand side above. The GPS data from the file you selected on the right will be applied to photos in the album selected from left-hand side. 
 </p>
 
 =end html
+
+=head2 INSTALL
+
+edit the various '.properties' files in root dir
+
+get developer keys for the Picasa/+ API
+
+https://developers.google.com/+/api/
+
+edit clientcustomssl.java with your key values
+
+build as normal android/ant project
 
 
 
